@@ -1,10 +1,12 @@
-from flask import Flask
+print('Hello World')
 
-app = Flask(__name__)
+# from flask import Flask
 
-@app.route('/')
-def hello_world():
-    return 'Hello, this is a testing devops code '
+# app = Flask(__name__)
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+# @app.route('/')
+# def hello_world():
+   # return 'Hello, this is a testing devops code '
+
+# if __name__ == '__main__':
+   # app.run(debug=True, host='0.0.0.0', port=5000)
