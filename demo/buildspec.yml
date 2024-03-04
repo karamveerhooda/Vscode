@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Logging in
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn pacakage
+      - cd demo/src/main/java/com/example/demo/HelloController.java      
+artifacts:
+  files:
+    - '**/*'
