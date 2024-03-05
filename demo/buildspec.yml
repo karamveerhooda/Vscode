@@ -7,8 +7,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvn pacakage
-      - cd demo/src/main/java/com/example/demo/HelloController.java      
+      - mvn package
+      - cd demo     
 artifacts:
   files:
-    - target/*.jar
+    - target/demo-0.0.1-SNAPSHOT.jar
