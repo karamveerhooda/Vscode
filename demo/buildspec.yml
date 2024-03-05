@@ -11,4 +11,4 @@ phases:
       - cd demo/src/main/java/com/example/demo/HelloController.java      
 artifacts:
   files:
-    - '**/*'
+    - target/*.jar
