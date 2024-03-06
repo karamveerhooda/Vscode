@@ -23,8 +23,7 @@ pipeline {
             steps {
                 // Run the Spring Boot application
                 script {
-                    cd demo/target
-                    sh 'java -jar demo-0.0.1-SNAPSHOT.jar'
+                    sh 'java -jar demo/target/demo-0.0.1-SNAPSHOT.jar'
                 }
             }
         }
