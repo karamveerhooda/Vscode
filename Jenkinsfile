@@ -18,10 +18,20 @@ pipeline {
                 }
             }
         }*/
+        
+         script {
+            sh 'ls demo/target'
+        }
 
         stage('Deploy') {
+
             steps {
                 // Run the Spring Boot application
+                cleanWs()
+                script {
+                    sh 'pwd'
+                    sh 'ls -l demo/target'
+                    }
                 script {
                     sh 'java -jar demo/target/demo-0.0.1-SNAPSHOT.jar'
                 }
