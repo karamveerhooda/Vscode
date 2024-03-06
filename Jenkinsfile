@@ -19,16 +19,13 @@ pipeline {
             }
         }*/
         
-         script {
-            sh 'ls demo/target'
-        }
-
         stage('Deploy') {
 
             steps {
                 // Run the Spring Boot application
                 cleanWs()
                 script {
+                    sh 'ls demo/target'
                     sh 'pwd'
                     sh 'ls -l demo/target'
                     }
